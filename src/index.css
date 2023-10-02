@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Lato:wght@300;400;700&family=Merriweather&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400&family=Sacramento&display=swap');
+
+:root {
+  --primary: #f4d108;
+  --error: #e7195a;
+}
+
+body {
+  background: #F9F5F6;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+header {
+  background: #F2BE22;
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.note-details {
+  /* display: flex;
+  flex-direction: column; */
+  /* background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left; */
+  background: #fff;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.note-details h4{
+  margin:0 0 10px 0;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+
+.note-details span{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50px;
+  color: #333;
+}
+
+.home{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+/* .create{ */
+  /* border-radius: 12px;
+  position:static;
+  border: 1px solid black;
+  display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    float: right; */
+/* } */
+
+/* .note-details h4 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note-details p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+} */
+/* .login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 100px;
+  margin: 20px 400px;
+  height: 500px;
+  border: 2px solid black;
+}
+.signup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 100px;
+  margin: 20px 400px;
+  height: 500px;
+  border: 2px solid black;
+} */
+/* form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  input{
+      padding: 15px;
+      border: none;
+      width: 250px;
+      border-bottom: 1px  solid #a7bcff;
+      &::placeholder{
+          color: rgb(175, 175, 175);
+      }
+  }
+
+  button{
+      background-color: #7b96ec;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 10px;
+
+      img{
+          width: 32px;
+      }
+  }
+
+  label{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #8da4f1;
+      font-size: 12px;
+      cursor: pointer;
+  }
+} */
+
+/* .login button{
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  color: #F2BE22;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.login button:hover{
+  color: white;
+  background-color: black;
+}
+.signup button{
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  color: #F2BE22;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.signup button:hover{
+  color: white;
+  background-color: black;
+} */
+form.signup, form.login{
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+label, input{
+  display: block;
+}
+input{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button{
+  background: var(--primary);
+  border: 1px solid black;
+  /* color: #fff; */
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error{
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+/* navbar */
+nav{
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
+#signInButton{
+  align-items: center;
+  /* margin-left: 00px; */
+}
